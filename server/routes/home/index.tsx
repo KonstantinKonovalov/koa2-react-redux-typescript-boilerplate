@@ -9,7 +9,7 @@ import { Html } from '../../components/Html';
 
 async function home(ctx: Context) {
     const state = serialize({
-        data: null
+        currencies: null
     });
 
     const htmlStream =
