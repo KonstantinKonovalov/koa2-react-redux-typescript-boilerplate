@@ -1,4 +1,14 @@
-.test {
-    color: red;
-    font-size: 35px;
+body {
+    font-size: 14px;
+    color: #404040;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.app {
+    background-color: #fbfbfb;
+    min-height: 100vh;
+    min-width: 960px;
+    display: flex;
+    flex-direction: column;
 }

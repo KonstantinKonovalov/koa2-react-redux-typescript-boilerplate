@@ -10,7 +10,6 @@ const app = new Koa();
 
 app.proxy = true;
 
-app.context.tokenName = 'auth_token';
 app.context.assets = assets;
 
 app.use(async (ctx: any, next: Function) => {

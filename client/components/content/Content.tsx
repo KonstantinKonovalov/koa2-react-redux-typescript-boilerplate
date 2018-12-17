@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { CurrenciesContainer } from '../../containers/currencies/CurrenciesContainer';
 
 require('./content.css');
 
 export const Content = () => (
-    <React.Fragment>
+    <div className="content">
         <Switch>
-            <Route exact path="/" render={() => <div>asd</div>} />
+            <Route exact path="/" component={CurrenciesContainer} />
         </Switch>
-    </React.Fragment>
+    </div>
 )

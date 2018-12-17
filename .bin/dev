@@ -5,12 +5,11 @@ const { clean } = require('../scripts/task-clean');
 const { buildServer } = require('../scripts/task-build-server');
 const { getArgv } = require('../scripts/argv');
 
-const { HOST = '0.0.0.0', PORT = 3000, BACKEND = ' https://blockchain.info' } = process.env;
+const { HOST = '0.0.0.0', PORT = 3000, BACKEND = 'https://chasing-coins.com' } = process.env;
 
 const port = getArgv(process.argv, '--port') || PORT;
 const host = getArgv(process.argv, '--host') || HOST;
 const backend = getArgv(process.argv, '--backend') || BACKEND;
-
 const pad = (n) => n < 10 ? `0${n}` : `${n}`;
 
 const time = (ms) => {

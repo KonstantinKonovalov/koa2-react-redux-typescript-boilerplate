@@ -8,8 +8,10 @@ import * as serialize from 'serialize-javascript';
 import { Html } from '../../components/Html';
 
 async function home(ctx: Context) {
+    const currencies = await ctx.apiClient.get('/api/v1/coins');
+
     const state = serialize({
-        currencies: null
+        currencies: currencies.data
     });
 
     const htmlStream =
